@@ -1,11 +1,11 @@
-" File:         python-toggle.vim
-" Description:  Toggle Python boolean values.
+" File:         toggle-bool.vim
+" Description:  Toggle boolean values.
 " Author:       Branislav Gerazov <gerazov@feit.ukim.edu.mk>
 
-if exists('g:loaded_python_toggle')
+if exists('g:loaded_toggle_bool')
     finish
 endif
-let g:loaded_python_toggle = 1
+let g:loaded_toggle_bool= 1
 
 function! ToggleBool()
    let save_pos = getpos(".")
