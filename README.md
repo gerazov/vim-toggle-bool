@@ -1,5 +1,7 @@
 # vim-toggle-bool
 
+<img src="./toggle-bool.gif" width="500px"/>
+
 This is a very simple Vim plugin built ontop of [switch.vim](https://github.com/AndrewRadev/switch.vim) that can be used to toggle boolean values for Python, C, JavaScript etc, i.e. the following toggles are made: 
 - `True` → `False` and `False` → `True`,
 - `true` → `false` and `false` → `true`,
