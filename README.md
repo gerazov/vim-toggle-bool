@@ -1,7 +1,9 @@
-# vim-python-toggle
+# vim-toggle-bool
 
-This is a very simple Vim plugin built ontop of [switch.vim](https://github.com/AndrewRadev/switch.vim) that can be used to toggle boolean values in Python: `True` → `False` and `False` → `True`.
-The toggle works for any boolean on the current line and does not change the cursor position.
+This is a very simple Vim plugin built ontop of [switch.vim](https://github.com/AndrewRadev/switch.vim) that can be used to toggle boolean values for Python, C, JavaScript etc, i.e. the following toggles are made: 
+- `True` → `False` and `False` → `True`,
+- `true` → `false` and `false` → `true`,
+The toggle works for the first match on the current line and does not change the cursor position.
 
 ## Install
 
@@ -11,15 +13,15 @@ For [vim-plug](https://github.com/junegunn/vim-plug) it's:
 
 ```vim
 Plug 'AndrewRadev/switch.vim'
-Plug 'gerazov/vim-python-toggle'
+Plug 'gerazov/vim-toggle-bool'
 ```
 
 ## Usage
 
-The plugin creates a single command `PythonToggle`. An example keymapping is:
+The plugin creates a single command `ToggleBool`. An example keymapping is:
 
 ```vim
-nnoremap <Leader>s :PythonToggle<CR>
+nnoremap <silent> <Leader>s :ToggleBool<CR>
 ```
 
 ## Requirements 
