@@ -19,7 +19,7 @@ Plug 'gerazov/vim-python-toggle'
 The plugin creates a single command `PythonToggle`. An example keymapping is:
 
 ```vim
-nnoremap <Leader>s :PythonToggle<CR>
+nnoremap <silent> <Leader>s :PythonToggle<CR>
 ```
 
 ## Requirements 
