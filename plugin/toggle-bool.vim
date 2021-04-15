@@ -7,13 +7,13 @@ if exists('g:loaded_python_toggle')
 endif
 let g:loaded_python_toggle = 1
 
-function! PythonToggle()
+function! ToggleBool()
    let save_pos = getpos(".")
-   call search('True', '', line('.'))
-   call search('False', '', line('.'))
+   normal 0
+   call search('true\|false', '', line('.'))
    execute 'Switch'
    call setpos(".", save_pos)
 endfunction
 
-command! -nargs=0 PythonToggle call PythonToggle()
+command! -nargs=0 ToggleBool call ToggleBool()
 
