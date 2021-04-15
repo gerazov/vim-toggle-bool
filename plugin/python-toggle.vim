@@ -17,4 +17,3 @@ endfunction
 
 command! -nargs=0 PythonToggle call PythonToggle()
 
-nnoremap <Leader>s :PythonToggle<CR>
