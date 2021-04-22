@@ -13,8 +13,8 @@ function! ToggleBool()
    if call search('\c\<true\>\|\<false\>', '', line('.')) > 0
        execute 'Switch'
    else
-       execute 's/\<1\>/0/'
-       execute 's/\<0\>/1/'
+       execute 's/\\<1\\>/0/'
+       execute 's/\\<0\\>/1/'
    endif
    call setpos(".", save_pos)
 endfunction
