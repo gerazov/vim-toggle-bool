@@ -10,8 +10,9 @@ let g:loaded_toggle_bool= 1
 function! ToggleBool()
    let save_pos = getpos(".")
    normal 0
-   call search('true\|false', '', line('.'))
-   execute 'Switch'
+   if call search('\c\<true\>\|\<false\>\|\<1\>\|\<0\>', '', line('.')) > 0
+       execute 'Switch'
+   endif
    call setpos(".", save_pos)
 endfunction
 

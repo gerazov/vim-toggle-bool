@@ -1,8 +1,10 @@
 # vim-toggle-bool
 
-This is a very simple Vim plugin built ontop of [switch.vim](https://github.com/AndrewRadev/switch.vim) that can be used to toggle boolean values for Python, C, JavaScript etc, i.e. the following toggles are made: 
+This is a very simple Vim plugin built ontop of [switch.vim](https://github.com/AndrewRadev/switch.vim) that can be used to toggle boolean values for Python, JavaScript etc, i.e. the following toggles are made: 
 - `True` → `False` and `False` → `True`,
 - `true` → `false` and `false` → `true`,
+- `1` → `0` and `0` → `1`.
+
 The toggle works for the first match on the current line and does not change the cursor position.
 
 ## Install
