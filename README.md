@@ -21,22 +21,6 @@ Plug 'AndrewRadev/switch.vim'
 Plug 'gerazov/vim-toggle-bool'
 ```
 
-## Configuration for switch.vim
-
-Add this to your vim configuration:
-
-```
-" switch.vim
-let g:switch_custom_definitions =
-    \ [
-    \   switch#NormalizedCase(['true', 'false']),
-    \   switch#NormalizedCase(['yes', 'no']),
-    \   switch#NormalizedCase(['on', 'off']),
-    \   switch#NormalizedCase(['enable', 'disable']),
-    \   switch#NormalizedCase(['enabled', 'disabled'])
-    \ ]
-```
-
 ## Usage
 
 The plugin creates a single command `ToggleBool`. An example keymapping is:
