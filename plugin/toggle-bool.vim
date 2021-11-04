@@ -19,6 +19,8 @@ function! ToggleBool()
        Switch
    elseif search('\c\<enable\>\|\<disable\>', '', line('.')) > 0
        Switch
+   elseif search('\c\<enabled\>\|\<disabled\>', '', line('.')) > 0
+       Switch
    elseif search('\<1\>', '', line('.')) > 0
        execute 's/\<1\>/0/'
    elseif search('\<0\>', '', line('.')) > 0

@@ -9,6 +9,8 @@ This is a very simple Vim plugin built ontop of [switch.vim](https://github.com/
 - `on` → `off` and `off` → `on`,
 - `Enable` → `Disable` and `Disable` → `Enable`,
 - `enable` → `disable` and `disable` → `enable`,
+- `Enabled` → `Disabled` and `Disabled` → `Enabled`,
+- `enabled` → `disabled` and `disabled` → `enabled`,
 - `1` → `0` and `0` → `1`.
 
 The toggle works for the first match on the current line and does not change the cursor position.
@@ -35,6 +37,7 @@ let g:switch_custom_definitions =
     \   switch#NormalizedCase(['yes', 'no']),
     \   switch#NormalizedCase(['on', 'off']),
     \   switch#NormalizedCase(['enable', 'disable'])
+    \   switch#NormalizedCase(['enabled', 'disabled'])
     \ ]
 ```
 
