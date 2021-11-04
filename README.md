@@ -2,18 +2,13 @@
 
 This is a very simple Vim plugin built ontop of [switch.vim](https://github.com/AndrewRadev/switch.vim) that can be used to toggle various boolean values. The following toggles are made: 
 - `True` → `False` and `False` → `True`,
-- `true` → `false` and `false` → `true`,
 - `Yes` → `No` and `No` → `Yes`,
-- `yes` → `no` and `no` → `yes`,
 - `On` → `Off` and `Off` → `On`,
-- `on` → `off` and `off` → `on`,
 - `Enable` → `Disable` and `Disable` → `Enable`,
-- `enable` → `disable` and `disable` → `enable`,
 - `Enabled` → `Disabled` and `Disabled` → `Enabled`,
-- `enabled` → `disabled` and `disabled` → `enabled`,
 - `1` → `0` and `0` → `1`.
 
-The toggle works for the first match on the current line and does not change the cursor position.
+The toggle works for the first match on the current line and does not change the cursor position. Upper, lower and capitalised case are supported and retained.
 
 ## Install
 
@@ -34,9 +29,10 @@ Add this to your vim configuration:
 " switch.vim
 let g:switch_custom_definitions =
     \ [
+    \   switch#NormalizedCase(['true', 'false']),
     \   switch#NormalizedCase(['yes', 'no']),
     \   switch#NormalizedCase(['on', 'off']),
-    \   switch#NormalizedCase(['enable', 'disable'])
+    \   switch#NormalizedCase(['enable', 'disable']),
     \   switch#NormalizedCase(['enabled', 'disabled'])
     \ ]
 ```
