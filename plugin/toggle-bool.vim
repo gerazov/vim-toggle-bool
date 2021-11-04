@@ -13,6 +13,14 @@ function! ToggleBool()
 
    if search('\c\<true\>\|\<false\>', '', line('.')) > 0
        Switch
+   elseif search('\c\<yes\>\|\<no\>', '', line('.')) > 0
+       Switch
+   elseif search('\c\<on\>\|\<off\>', '', line('.')) > 0
+       Switch
+   elseif search('\c\<enable\>\|\<disable\>', '', line('.')) > 0
+       Switch
+   elseif search('\c\<enabled\>\|\<disabled\>', '', line('.')) > 0
+       Switch
    elseif search('\<1\>', '', line('.')) > 0
        execute 's/\<1\>/0/'
    elseif search('\<0\>', '', line('.')) > 0

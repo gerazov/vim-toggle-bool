@@ -1,8 +1,16 @@
 # vim-toggle-bool
 
-This is a very simple Vim plugin built ontop of [switch.vim](https://github.com/AndrewRadev/switch.vim) that can be used to toggle boolean values for Python, JavaScript etc, i.e. the following toggles are made: 
+This is a very simple Vim plugin built ontop of [switch.vim](https://github.com/AndrewRadev/switch.vim) that can be used to toggle various boolean values. The following toggles are made: 
 - `True` → `False` and `False` → `True`,
 - `true` → `false` and `false` → `true`,
+- `Yes` → `No` and `No` → `Yes`,
+- `yes` → `no` and `no` → `yes`,
+- `On` → `Off` and `Off` → `On`,
+- `on` → `off` and `off` → `on`,
+- `Enable` → `Disable` and `Disable` → `Enable`,
+- `enable` → `disable` and `disable` → `enable`,
+- `Enabled` → `Disabled` and `Disabled` → `Enabled`,
+- `enabled` → `disabled` and `disabled` → `enabled`,
 - `1` → `0` and `0` → `1`.
 
 The toggle works for the first match on the current line and does not change the cursor position.
@@ -16,6 +24,21 @@ For [vim-plug](https://github.com/junegunn/vim-plug) it's:
 ```vim
 Plug 'AndrewRadev/switch.vim'
 Plug 'gerazov/vim-toggle-bool'
+```
+
+## Configuration for switch.vim
+
+Add this to your vim configuration:
+
+```
+" switch.vim
+let g:switch_custom_definitions =
+    \ [
+    \   switch#NormalizedCase(['yes', 'no']),
+    \   switch#NormalizedCase(['on', 'off']),
+    \   switch#NormalizedCase(['enable', 'disable'])
+    \   switch#NormalizedCase(['enabled', 'disabled'])
+    \ ]
 ```
 
 ## Usage
