@@ -6,6 +6,14 @@ if exists('g:loaded_toggle_bool')
     finish
 endif
 let g:loaded_toggle_bool= 1
+let g:switch_custom_definitions =
+    \ [
+    \   switch#NormalizedCase(['true', 'false']),
+    \   switch#NormalizedCase(['yes', 'no']),
+    \   switch#NormalizedCase(['on', 'off']),
+    \   switch#NormalizedCase(['enable', 'disable']),
+    \   switch#NormalizedCase(['enabled', 'disabled'])
+    \ ]
 
 function! ToggleBool()
    let save_pos = getpos(".")
