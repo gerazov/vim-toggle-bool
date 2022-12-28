@@ -1,12 +1,14 @@
 # vim-toggle-bool
 
 This is a very simple Vim plugin built ontop of [switch.vim](https://github.com/AndrewRadev/switch.vim) that can be used to toggle various boolean values. The following toggles are made: 
-- `True` → `False` and `False` → `True`,
-- `Yes` → `No` and `No` → `Yes`,
-- `On` → `Off` and `Off` → `On`,
-- `Enable` → `Disable` and `Disable` → `Enable`,
-- `Enabled` → `Disabled` and `Disabled` → `Enabled`,
-- `1` → `0` and `0` → `1`.
+- `True` ←→ `False`
+- `Yes` ←→ `No`
+- `On` ←→ `Off`
+- `1` ←→ `0`
+- `Enable(d)` ←→ `Disable(d)`
+- `First` ←→ `Last`
+- `Before` ←→ `After`
+- `Persistent` ←→ `Ephemeral`
 
 The toggle works for the first match on the current line and does not change the cursor position. Upper, lower and capitalised case are supported and retained.
 

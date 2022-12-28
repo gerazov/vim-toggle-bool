@@ -12,7 +12,10 @@ let g:switch_custom_definitions =
     \   switch#NormalizedCase(['yes', 'no']),
     \   switch#NormalizedCase(['on', 'off']),
     \   switch#NormalizedCase(['enable', 'disable']),
-    \   switch#NormalizedCase(['enabled', 'disabled'])
+    \   switch#NormalizedCase(['enabled', 'disabled']),
+    \   switch#NormalizedCase(['first', 'last']),
+    \   switch#NormalizedCase(['before', 'after']),
+    \   switch#NormalizedCase(['persistent', 'ephemeral'])
     \ ]
 
 function! ToggleBool()
@@ -28,6 +31,12 @@ function! ToggleBool()
    elseif search('\c\<enable\>\|\<disable\>', '', line('.')) > 0
        Switch
    elseif search('\c\<enabled\>\|\<disabled\>', '', line('.')) > 0
+       Switch
+   elseif search('\c\<first\>\|\<last\>', '', line('.')) > 0
+       Switch
+   elseif search('\c\<before\>\|\<after\>', '', line('.')) > 0
+       Switch
+   elseif search('\c\<persistent\>\|\<ephemeral\>', '', line('.')) > 0
        Switch
    elseif search('\<1\>', '', line('.')) > 0
        execute 's/\<1\>/0/'
