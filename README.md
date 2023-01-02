@@ -10,6 +10,8 @@ This is a very simple Vim plugin built on top of [switch.vim](https://github.com
 - `Before` ←→ `After`
 - `Persistent` ←→ `Ephemeral`
 - `Ingress` ←→ `Egress`
+- `Allow` ←→ `Deny`
+- `All` ←→ `None`
 
 The toggle works for the first match on the current line and does not change the cursor position. Upper, lower and capitalised case are supported and retained.
 

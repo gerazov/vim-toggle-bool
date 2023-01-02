@@ -16,7 +16,9 @@ let g:switch_custom_definitions =
     \   switch#NormalizedCase(['first', 'last']),
     \   switch#NormalizedCase(['before', 'after']),
     \   switch#NormalizedCase(['persistent', 'ephemeral']),
-    \   switch#NormalizedCase(['ingress', 'egress'])
+    \   switch#NormalizedCase(['ingress', 'egress']),
+    \   switch#NormalizedCase(['allow', 'deny']),
+    \   switch#NormalizedCase(['all', 'none'])
     \ ]
 
 function! ToggleBool()
@@ -40,6 +42,10 @@ function! ToggleBool()
    elseif search('\c\<persistent\>\|\<ephemeral\>', '', line('.')) > 0
        Switch
    elseif search('\c\<ingress\>\|\<egress\>', '', line('.')) > 0
+       Switch
+   elseif search('\c\<allow\>\|\<deny\>', '', line('.')) > 0
+       Switch
+   elseif search('\c\<all\>\|\<none\>', '', line('.')) > 0
        Switch
    elseif search('\<1\>', '', line('.')) > 0
        execute 's/\<1\>/0/'
