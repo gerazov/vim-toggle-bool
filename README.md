@@ -9,6 +9,7 @@ This is a very simple Vim plugin built on top of [switch.vim](https://github.com
 - `First` ←→ `Last`
 - `Before` ←→ `After`
 - `Persistent` ←→ `Ephemeral`
+- `Internal` ←→ `External`
 - `Ingress` ←→ `Egress`
 - `Allow` ←→ `Deny`
 - `All` ←→ `None`
