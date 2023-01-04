@@ -1,6 +1,6 @@
 # vim-toggle-bool
 
-This is a very simple Vim plugin built ontop of [switch.vim](https://github.com/AndrewRadev/switch.vim) that can be used to toggle various boolean values. The following toggles are made: 
+This is a very simple Vim plugin built on top of [switch.vim](https://github.com/AndrewRadev/switch.vim) that can be used to toggle various boolean values. The following toggles are made: 
 - `True` ←→ `False`
 - `Yes` ←→ `No`
 - `On` ←→ `Off`
@@ -9,6 +9,10 @@ This is a very simple Vim plugin built ontop of [switch.vim](https://github.com/
 - `First` ←→ `Last`
 - `Before` ←→ `After`
 - `Persistent` ←→ `Ephemeral`
+- `Internal` ←→ `External`
+- `Ingress` ←→ `Egress`
+- `Allow` ←→ `Deny`
+- `All` ←→ `None`
 
 The toggle works for the first match on the current line and does not change the cursor position. Upper, lower and capitalised case are supported and retained.
 
