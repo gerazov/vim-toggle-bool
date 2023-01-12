@@ -1,5 +1,7 @@
 # vim-toggle-bool
 
+⚠  I've ported a leaner version of this to lua [toggle-bool.nvim](https://github.com/gerazov/toggle-bool.nvim)
+
 This is a very simple Vim plugin built on top of [switch.vim](https://github.com/AndrewRadev/switch.vim) that can be used to toggle various boolean values. The following toggles are made: 
 - `True` ←→ `False`
 - `Yes` ←→ `No`
